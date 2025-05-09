@@ -43,7 +43,7 @@ def column_recall_main(schema, tabs_cols_ori, question, llm, foreign_keys_prompt
     
 
 def generate(llm, data_input, prompt, callback=None):
-    
+
     llm_chain = LLMChain(prompt=prompt, llm=llm)
     tabs_cols_all = None
     attempts = 1
@@ -72,7 +72,7 @@ def generate(llm, data_input, prompt, callback=None):
         
 
 def get_tables_column_response(responses):
-    
+
     tabs_cols_all = []
     for tabs_cols_response in responses.generations[0]:
         raw_tab_col = tabs_cols_response.text

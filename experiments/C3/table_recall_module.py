@@ -39,29 +39,13 @@ def table_recall_main(schema, tables_ori, question, llm, callback=None):
     
 
 def generate(llm, data_input, prompt, callback=None):
-    # chain = prompt | llm
-    # tables_all = None
-    # while tables_all is None:
-    #     try:
-    #         with get_openai_callback() as cb:
-    #             result = chain.invoke(data_input[0])
-    #             tables_all = get_tables_response(result)
-    #             if tables_all is not None:
-    #                 if callback is not None:
-    #                     callback({"table_recall":cb})
-    #             else:
-    #                 time.sleep(TIME_TO_SLEEP)
-    #     except:
-    #         print(f'api error, wait for {TIME_TO_SLEEP} seconds and retry...')
-    #         time.sleep(TIME_TO_SLEEP)
-    #     return tables_all
-
-    llm_chain = LLMChain(prompt=prompt, llm=llm)
+    chain = prompt | llm
     tables_all = None
     while tables_all is None:
         try:
             with get_openai_callback() as cb:
-                result = llm_chain.generate(data_input)
+                result = chain.invoke(data_input)
+                print("Debug check 1: ", result)
                 tables_all = get_tables_response(result)
                 if tables_all is not None:
                     if callback is not None:
@@ -70,36 +54,69 @@ def generate(llm, data_input, prompt, callback=None):
                     time.sleep(TIME_TO_SLEEP)
         except:
             print(f'api error, wait for {TIME_TO_SLEEP} seconds and retry...')
-            time.sleep(TIME_TO_SLEEP)       
+            time.sleep(TIME_TO_SLEEP)
+        return tables_all
+
+    # llm_chain = LLMChain(prompt=prompt, llm=llm)
+    # tables_all = None
+    # while tables_all is None:
+    #     try:
+    #         with get_openai_callback() as cb:
+    #             result = llm_chain.generate(data_input)
+    #             tables_all = get_tables_response(result)
+    #             if tables_all is not None:
+    #                 if callback is not None:
+    #                     callback({"table_recall":cb})
+    #             else:
+    #                 time.sleep(TIME_TO_SLEEP)
+    #     except:
+    #         print(f'api error, wait for {TIME_TO_SLEEP} seconds and retry...')
+    #         time.sleep(TIME_TO_SLEEP)       
     
-    return tables_all
+    # return tables_all
         
         
 
 def get_tables_response(responses):
-    all_tables = []
-    for table_response in responses.generations[0]:
-        raw_table = table_response.text
-        try:
-            raw_table = '[' + raw_table.split('[', 1)[1]
-            raw_table = raw_table.rsplit(']', 1)[0] + ']'
-            raw_table = eval(raw_table)
-            if Ellipsis in raw_table:
-                raw_table.remove(Ellipsis)
-        except:
-            print('list error')
-            return None
-       
-        all_tables.append(raw_table)
 
-    return all_tables
-    # print("Raw Response content: ", responses)
-    # template = TABLE_RECALL_PROMPT.format(schema=schema, question='{question}')
-    # prompt = PromptTemplate(template=template, input_variables=["question"])
-    # data_input = [{"question": question}]
-    # tables_all = generate(llm, data_input, prompt, callback)
-    # table_list = table_self_consistency(tables_all, tables_ori)
-    # return table_list
+    try:
+        raw_text = responses.content
+        #This takes only the list from the response
+        raw_list_str = raw_text[raw_text.index("["):raw_text.index("]")+1]
+        table_list = eval(raw_list_str)
+        #eval converts the string to a list
+        if Ellipsis in table_list:
+            table_list.remove(Ellipsis)
+
+        table_list = [table.strip() for table in table_list]
+        #remove ellipses or trailing spaces and clean up the list contents
+        # print("Table names are ", table_list)
+        # Just for debugging
+        return [table_list]    
+        #print("Raw Text: ",raw_text)
+    except:
+        print("Error ")    
+        return None
+    
+    # all_tables = []
+    # for table_response in responses.generations[0]:
+    #     raw_table = table_response.text
+    #     try:
+    #         raw_table = '[' + raw_table.split('[', 1)[1]
+    #         raw_table = raw_table.rsplit(']', 1)[0] + ']'
+    #         raw_table = eval(raw_table)
+    #         if Ellipsis in raw_table:
+    #             raw_table.remove(Ellipsis)
+    #     except:
+    #         print('list error')
+    #         return None
+       
+    #     all_tables.append(raw_table)
+
+    # return all_tables
+
+    
+    
     
 def table_self_consistency(tables_all, tables_ori):
     
