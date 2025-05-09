@@ -23,8 +23,8 @@ Question:
 {question}
 """
 
-#Stable version of Table Recall
-#Uses older version of LangChain, need to update to use the latest version
+#Updated with the new LangChain method to get responses
+#Older version was using the LLMChain method that will be deprecated, but the code is commented out for reference
 def table_recall_main(schema, tables_ori, question, llm, callback=None):
     
     template = TABLE_RECALL_PROMPT.format(schema=schema, question='{question}')
