@@ -26,9 +26,9 @@
                 }
             },
             "time": 30.162826776504517,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "2",
@@ -56,9 +56,9 @@
                 }
             },
             "time": 9.382872581481934,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "3",
@@ -86,7 +86,7 @@
                 }
             },
             "time": 7.642976760864258,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -116,9 +116,9 @@
                 }
             },
             "time": 49.02512812614441,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "5",
@@ -146,7 +146,7 @@
                 }
             },
             "time": 7.12199854850769,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -176,7 +176,7 @@
                 }
             },
             "time": 10.377009630203247,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -236,7 +236,7 @@
                 }
             },
             "time": 79.14779996871948,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -266,7 +266,7 @@
                 }
             },
             "time": 104.97297692298889,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -296,9 +296,9 @@
                 }
             },
             "time": 7.9460625648498535,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "11",
@@ -326,7 +326,7 @@
                 }
             },
             "time": 14.032005786895752,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -356,9 +356,9 @@
                 }
             },
             "time": 8.609262704849243,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "13",
@@ -386,9 +386,9 @@
                 }
             },
             "time": 24.907870292663574,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "14",
@@ -416,9 +416,9 @@
                 }
             },
             "time": 15.0699622631073,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "15",
@@ -446,7 +446,7 @@
                 }
             },
             "time": 7.618473291397095,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -476,9 +476,9 @@
                 }
             },
             "time": 8.46655559539795,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "17",
@@ -506,9 +506,9 @@
                 }
             },
             "time": 27.148829460144043,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "18",
@@ -536,9 +536,9 @@
                 }
             },
             "time": 6.274962425231934,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "19",
@@ -566,7 +566,7 @@
                 }
             },
             "time": 193.0741515159607,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -596,7 +596,7 @@
                 }
             },
             "time": 7.88798975944519,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -626,9 +626,9 @@
                 }
             },
             "time": 10.507375240325928,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "22",
@@ -656,7 +656,7 @@
                 }
             },
             "time": 10.143266201019287,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -686,7 +686,7 @@
                 }
             },
             "time": 34.83797287940979,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -716,7 +716,7 @@
                 }
             },
             "time": 66.055260181427,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -746,9 +746,9 @@
                 }
             },
             "time": 19.975008010864258,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "26",
@@ -776,9 +776,9 @@
                 }
             },
             "time": 1201.9973978996277,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "27",
@@ -806,7 +806,7 @@
                 }
             },
             "time": 12.47607135772705,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -836,7 +836,7 @@
                 }
             },
             "time": 172.4309377670288,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -866,7 +866,7 @@
                 }
             },
             "time": 17.10434365272522,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -896,7 +896,7 @@
                 }
             },
             "time": 30.797844171524048,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -926,7 +926,7 @@
                 }
             },
             "time": 21.148678302764893,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -956,7 +956,7 @@
                 }
             },
             "time": 6.484166860580444,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -986,9 +986,9 @@
                 }
             },
             "time": 11.512576341629028,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "34",
@@ -1016,7 +1016,7 @@
                 }
             },
             "time": 21.61557912826538,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1046,7 +1046,7 @@
                 }
             },
             "time": 15.091861724853516,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1076,7 +1076,7 @@
                 }
             },
             "time": 7.363165378570557,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -1106,7 +1106,7 @@
                 }
             },
             "time": 9.326821565628052,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -1136,7 +1136,7 @@
                 }
             },
             "time": 8.634222507476807,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -1166,9 +1166,9 @@
                 }
             },
             "time": 3.481922149658203,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "40",
@@ -1196,7 +1196,7 @@
                 }
             },
             "time": 129.4218406677246,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1226,7 +1226,7 @@
                 }
             },
             "time": 55.515743255615234,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1256,9 +1256,9 @@
                 }
             },
             "time": 15.840999841690063,
-            "similarity": 0.975609756097561,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "43",
@@ -1286,7 +1286,7 @@
                 }
             },
             "time": 9.137500762939453,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -1316,9 +1316,9 @@
                 }
             },
             "time": 7.8492114543914795,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "45",
@@ -1346,7 +1346,7 @@
                 }
             },
             "time": 75.24115061759949,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 0.5,
             "result": false
         },
@@ -1406,7 +1406,7 @@
                 }
             },
             "time": 371.05399918556213,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -1436,9 +1436,9 @@
                 }
             },
             "time": 35.88099908828735,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "49",
@@ -1466,9 +1466,9 @@
                 }
             },
             "time": 10.858001470565796,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "50",
@@ -1496,7 +1496,7 @@
                 }
             },
             "time": 9.44700002670288,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1526,9 +1526,9 @@
                 }
             },
             "time": 64.23400092124939,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "52",
@@ -1556,7 +1556,7 @@
                 }
             },
             "time": 17.099001169204712,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1586,9 +1586,9 @@
                 }
             },
             "time": 8.424998760223389,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "54",
@@ -1616,9 +1616,9 @@
                 }
             },
             "time": 12.82699990272522,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "55",
@@ -1646,9 +1646,9 @@
                 }
             },
             "time": 918.7134997844696,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "56",
@@ -1676,7 +1676,7 @@
                 }
             },
             "time": 123.03549909591675,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1706,7 +1706,7 @@
                 }
             },
             "time": 805.7669997215271,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1736,9 +1736,9 @@
                 }
             },
             "time": 256.23349928855896,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "59",
@@ -1766,7 +1766,7 @@
                 }
             },
             "time": 143.28899908065796,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -1796,7 +1796,7 @@
                 }
             },
             "time": 13.738000869750977,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1826,7 +1826,7 @@
                 }
             },
             "time": 30.83899974822998,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1856,7 +1856,7 @@
                 }
             },
             "time": 31.663498640060425,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1886,9 +1886,9 @@
                 }
             },
             "time": 10.463500499725342,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "64",
@@ -1916,7 +1916,7 @@
                 }
             },
             "time": 40.973501205444336,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1946,7 +1946,7 @@
                 }
             },
             "time": 10.0024995803833,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -1976,9 +1976,9 @@
                 }
             },
             "time": 13.369499683380127,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "67",
@@ -2036,9 +2036,9 @@
                 }
             },
             "time": 21.35453963279724,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "69",
@@ -2066,9 +2066,9 @@
                 }
             },
             "time": 68.1214599609375,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "70",
@@ -2096,9 +2096,9 @@
                 }
             },
             "time": 11.123543739318848,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "71",
@@ -2126,9 +2126,9 @@
                 }
             },
             "time": 14.632397174835205,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "72",
@@ -2156,7 +2156,7 @@
                 }
             },
             "time": 21.07245135307312,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -2186,7 +2186,7 @@
                 }
             },
             "time": 8.130764722824097,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2216,9 +2216,9 @@
                 }
             },
             "time": 23.944143056869507,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "75",
@@ -2246,7 +2246,7 @@
                 }
             },
             "time": 23.619739294052124,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -2276,7 +2276,7 @@
                 }
             },
             "time": 50.20949935913086,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2306,9 +2306,9 @@
                 }
             },
             "time": 24.286191701889038,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "78",
@@ -2336,9 +2336,9 @@
                 }
             },
             "time": 9.988268613815308,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "79",
@@ -2366,7 +2366,7 @@
                 }
             },
             "time": 42.446776390075684,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 0.5,
             "result": false
         },
@@ -2396,9 +2396,9 @@
                 }
             },
             "time": 12.966909885406494,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "81",
@@ -2426,7 +2426,7 @@
                 }
             },
             "time": 17.510244607925415,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2456,9 +2456,9 @@
                 }
             },
             "time": 50.04470467567444,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "83",
@@ -2486,9 +2486,9 @@
                 }
             },
             "time": 25.540263175964355,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "84",
@@ -2516,7 +2516,7 @@
                 }
             },
             "time": 10.282664775848389,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -2546,7 +2546,7 @@
                 }
             },
             "time": 158.04638743400574,
-            "similarity": -1,
+            "similarity": 0,
             "column_matching_index": -1,
             "result": false
         },
@@ -2576,9 +2576,9 @@
                 }
             },
             "time": 29.022914171218872,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "87",
@@ -2606,9 +2606,9 @@
                 }
             },
             "time": 8.589562177658081,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "88",
@@ -2636,9 +2636,9 @@
                 }
             },
             "time": 72.87279486656189,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "89",
@@ -2666,9 +2666,9 @@
                 }
             },
             "time": 7.92816424369812,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "90",
@@ -2696,7 +2696,7 @@
                 }
             },
             "time": 8.354681968688965,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2726,9 +2726,9 @@
                 }
             },
             "time": 10.881407737731934,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "92",
@@ -2756,9 +2756,9 @@
                 }
             },
             "time": 14.776912689208984,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "93",
@@ -2786,9 +2786,9 @@
                 }
             },
             "time": 7.706506967544556,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "94",
@@ -2846,7 +2846,7 @@
                 }
             },
             "time": 53.569358348846436,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2876,9 +2876,9 @@
                 }
             },
             "time": 26.790727376937866,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "97",
@@ -2906,9 +2906,9 @@
                 }
             },
             "time": 8.986118078231812,
-            "similarity": 1.0,
+            "similarity": 0,
             "column_matching_index": 1.0,
-            "result": true
+            "result": false
         },
         {
             "id": "98",
@@ -2936,7 +2936,7 @@
                 }
             },
             "time": 8.446097135543823,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2966,7 +2966,7 @@
                 }
             },
             "time": 10.009397029876709,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         },
@@ -2996,7 +2996,7 @@
                 }
             },
             "time": 6.181938648223877,
-            "similarity": 0.0,
+            "similarity": 0,
             "column_matching_index": 0.0,
             "result": false
         }

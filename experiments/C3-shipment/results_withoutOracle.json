@@ -1,0 +1,54 @@
+{
+    "queries": [
+        {
+            "question": "Return the customer name and address as one field called fullAddress that consists of the address, city, state. Only show customers in 'IA' or 'BC' that have a valid address. Order by customer name ascending.",
+            "sql": "SELECT CONCAT(CONCAT(cname, ', '), CONCAT(CONCAT(address, ', '), CONCAT(city, ', ', state))) AS fullAddress FROM customer WHERE state IN ('IA', 'BC') AND address IS NOT NULL ORDER BY cname ASC;",
+            "time": 15.791380167007446
+        },
+        {
+            "question": "Return the shipment id, shipment date, product id, and amount for all shipments in 2022 where there was a product shipped with an amount greater than 8. Only show a shipment once and order by shipment date descending and amount descending.",
+            "sql": "SELECT sid, shipdate, pid, amount FROM shipment JOIN shippedproduct USING (sid) WHERE EXTRACT(YEAR FROM shipdate) = 2022 AND amount > 8 GROUP BY sid, shipdate, pid, amount ORDER BY shipdate DESC, amount DESC;",
+            "time": 17.244807243347168
+        },
+        {
+            "question": "Find all customers that have an 'R' or 'T' in their name and have a state of 'MI' or 'IA'. Order by customer name descending.",
+            "sql": "SELECT DISTINCT cname FROM customer WHERE (cname LIKE '%R%' OR cname LIKE '%T%') AND (state = 'MI' OR state = 'IA') ORDER BY cname DESC;",
+            "time": 12.089746952056885
+        },
+        {
+            "question": "Return a list of the unique product id and names that have shipped before with an amount less than 5 and order by product id descending.",
+            "sql": "SELECT DISTINCT product.pid, product.pname FROM product INNER JOIN shippedproduct ON product.pid = shippedproduct.pid INNER JOIN shipment ON shippedproduct.sid = shipment.sid WHERE shippedproduct.amount < 5 ORDER BY product.pid DESC;",
+            "time": 19.96494698524475
+        },
+        {
+            "question": "For each state, return the number of customers in that state and the number of shipments for customers in that state. Only show states with at least 2 shipments. Order by number of shipments descending.",
+            "sql": "SELECT state, COUNT(DISTINCT cid), COUNT(sid) FROM customer JOIN shipment USING (cid) GROUP BY state HAVING COUNT(sid) >= 2 ORDER BY COUNT(sid) DESC;",
+            "time": 23.3535737991333
+        },
+        {
+            "question": "Return the top 3 products for state 'AB' based on shipment revenue (amount*price) for the year 2022.",
+            "sql": "SELECT pname FROM ( SELECT product.pname, SUM(shippedproduct.amount*product.price) AS revenue FROM product INNER JOIN shippedproduct ON product.pid = shippedproduct.pid INNER JOIN shipment ON shippedproduct.sid = shipment.sid INNER JOIN customer ON shipment.cid = customer.cid WHERE customer.state = 'AB' AND EXTRACT(YEAR FROM shipment.shipdate) = 2022 GROUP BY product.pname ORDER BY revenue DESC ) FETCH FIRST 3 ROWS ONLY;",
+            "time": 22.921601057052612
+        },
+        {
+            "question": "Return a list of products (id and name) along with the number of times it has been shipped, the total amount of all shipments, and the total value of all shipments. Only consider shipments after September 1st, 2021, and only show products if they have been shipped at least three times and have a totalValueShipped > $110. Order by totalAmountShipped ascending.",
+            "sql": "SELECT pid, pname, COUNT(sid) AS timesShipped, SUM(amount) AS totalAmountShipped, SUM(amount * price) AS totalValueShipped FROM product JOIN shippedproduct ON product.pid = shippedproduct.pid JOIN shipment ON shippedproduct.sid = shipment.sid WHERE shipdate > TO_DATE('2021-09-01', 'YYYY-MM-DD') GROUP BY pid, pname HAVING COUNT(sid) >= 3 AND SUM(amount * price) > 110 ORDER BY totalAmountShipped ASC;",
+            "time": 23.542245149612427
+        },
+        {
+            "question": "Return pairs of customers (only show a pair once) that have been shipped the same product. Return the number of times the pair of customers have been shipped the same product (numShippedProducts). Order by numShippedProducts descending, then first customer name ascending, and second customer name ascending. Show customer pairs that have 5 or more times that they have been shipped the same product.",
+            "sql": "SELECT c1.cname AS customer1, c2.cname AS customer2, COUNT(*) AS numShippedProducts FROM customer c1, customer c2, shipment s1, shipment s2, shippedproduct sp1, shippedproduct sp2 WHERE c1.cid = s1.cid AND c2.cid = s2.cid AND s1.sid = sp1.sid AND s2.sid = sp2.sid AND sp1.pid = sp2.pid AND c1.cname < c2.cname GROUP BY c1.cname, c2.cname HAVING COUNT(*) >= 5 ORDER BY numShippedProducts DESC, customer1 ASC, customer2 ASC",
+            "time": 29.702579975128174
+        },
+        {
+            "question": "Return a complete list of all customers (cid, cname), the total number of shipments, and total shipped value (amount*price) that they have been shipped. Return the bottom five customers by total shipped value.",
+            "sql": "SELECT cname, cid, COUNT(DISTINCT shipment.sid) AS total_shipments, SUM(shippedproduct.amount * product.price) AS total_shipped_value FROM customer JOIN shipment ON customer.cid = shipment.cid JOIN shippedproduct ON shipment.sid = shippedproduct.sid JOIN product ON shippedproduct.pid = product.pid GROUP BY cname, cid ORDER BY total_shipped_value ASC FETCH FIRST 5 ROWS ONLY;",
+            "time": 17.406975984573364
+        },
+        {
+            "question": "Return the products that are shipped more often than the average number of times a product is shipped. Order by number of shipments descending and product id ascending.",
+            "sql": "SELECT product.pname, COUNT(shippedproduct.sid) AS num_shipments FROM shippedproduct JOIN product ON shippedproduct.pid = product.pid GROUP BY product.pname HAVING COUNT(shippedproduct.sid) > ( SELECT AVG(num_product_shipments) FROM ( SELECT COUNT(shippedproduct.sid) AS num_product_shipments FROM shippedproduct GROUP BY pid ) ) ORDER BY num_shipments DESC, shippedproduct.pid ASC;",
+            "time": 20.015738248825073
+        }
+    ]
+}

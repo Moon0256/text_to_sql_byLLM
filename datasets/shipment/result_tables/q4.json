@@ -1,0 +1,35 @@
+
+[
+    {
+        "pid": 10,
+        "pname": "Textbook"
+    },
+    {
+        "pid": 9,
+        "pname": "Sports Car"
+    },
+    {
+        "pid": 8,
+        "pname": "Table"
+    },
+    {
+        "pid": 7,
+        "pname": "Deluxe Sweet Collection"
+    },
+    {
+        "pid": 4,
+        "pname": "Chocolate Bar"
+    },
+    {
+        "pid": 3,
+        "pname": "Teddy Bear"
+    },
+    {
+        "pid": 2,
+        "pname": "Wooden Chair"
+    },
+    {
+        "pid": 1,
+        "pname": "Swiss Chocolate"
+    }
+]

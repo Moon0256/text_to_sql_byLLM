@@ -1,0 +1,11 @@
+{
+  "DB_USER_NAME": "SHIPMENT",
+  "DB_PASS": "oraclee",
+  "DB_HOST": "localhost",
+  "DB_PORT": 1521,
+  "DB_NAME": "XE",
+  "SQL_DRIVER": "oracle+oracledb",
+  "SERVICE_NAME": "XE",
+  "SCHEMA": "SHIPMENT",
+  "KEYWORD_SEARCH_API_URL": ""
+}

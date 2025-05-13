@@ -1,0 +1,23 @@
+
+[
+    {
+        "state": "BC",
+        "numCustomers": 4,
+        "numShipments": 7
+    },
+    {
+        "state": "CA",
+        "numCustomers": 2,
+        "numShipments": 6
+    },
+    {
+        "state": "IA",
+        "numCustomers": 3,
+        "numShipments": 5
+    },
+    {
+        "state": "AB",
+        "numCustomers": 1,
+        "numShipments": 2
+    }
+]

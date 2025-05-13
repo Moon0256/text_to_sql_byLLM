@@ -1,0 +1,21 @@
+
+[
+    {
+        "state": "AB",
+        "year": 2022,
+        "pname": "Sports Car",
+        "revenue": 123500.00
+    },
+    {
+        "state": "AB",
+        "year": 2022,
+        "pname": "Textbook",
+        "revenue": 750.00
+    },
+    {
+        "state": "AB",
+        "year": 2022,
+        "pname": "Wooden Chair",
+        "revenue": 499.95
+    }
+]

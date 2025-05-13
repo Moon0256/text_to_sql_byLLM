@@ -1,11 +1,11 @@
 {
     "DB_HOST": "localhost",
-    "DB_PORT": "1522",
-    "DB_USER_NAME": "",
-    "DB_PASS": "",
-    "DB_NAME": "",
+    "DB_PORT": "1521",
+    "DB_USER_NAME": "MONDIAL",
+    "DB_PASS": "oraclee",
+    "DB_NAME": "XE",
     "SQL_DRIVER": "oracle+oracledb",
-    "SERVICE_NAME": "",
+    "SERVICE_NAME": "XE",
     "SCHEMA": "MONDIAL_GPT",
     "KEYWORD_SEARCH_API_URL": ""
   }

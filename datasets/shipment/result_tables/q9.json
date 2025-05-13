@@ -1,0 +1,33 @@
+
+[
+    {
+        "cid": 1,
+        "cname": "Fred Smith",
+        "numShipments": 0,
+        "totalShippedValue": null
+    },
+    {
+        "cid": 5,
+        "cname": "John Doe",
+        "numShipments": 0,
+        "totalShippedValue": null
+    },
+    {
+        "cid": 14,
+        "cname": "David Denter",
+        "numShipments": 0,
+        "totalShippedValue": null
+    },
+    {
+        "cid": 7,
+        "cname": "Robert Dean",
+        "numShipments": 1,
+        "totalShippedValue": 72.49
+    },
+    {
+        "cid": 3,
+        "cname": "Steve Stevenson",
+        "numShipments": 1,
+        "totalShippedValue": 164.95
+    }
+]

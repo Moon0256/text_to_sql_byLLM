@@ -1,0 +1,23 @@
+
+[
+    {
+        "pid": 1,
+        "pname": "Swiss Chocolate",
+        "numShipments": 8
+    },
+    {
+        "pid": 2,
+        "pname": "Wooden Chair",
+        "numShipments": 8
+    },
+    {
+        "pid": 4,
+        "pname": "Chocolate Bar",
+        "numShipments": 6
+    },
+    {
+        "pid": 10,
+        "pname": "Textbook",
+        "numShipments": 5
+    }
+]

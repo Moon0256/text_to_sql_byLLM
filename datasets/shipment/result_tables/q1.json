@@ -1,0 +1,26 @@
+[
+    {
+        "cname": "Aiden Adams",
+        "fullAddress": "324 2A Street, Kelowna, BC"
+    },
+    {
+        "cname": "Beth Rosebud",
+        "fullAddress": "1 First Street, Muscatine, IA"
+    },
+    {
+        "cname": "David Denter",
+        "fullAddress": "23456 Main Street, Vernon, BC"
+    },
+    {
+        "cname": "Elish Elias",
+        "fullAddress": "3445 Hwy 97 North, Lake Country, BC"
+    },
+    {
+        "cname": "Joe Smithsonian",
+        "fullAddress": "245 Straight Street, Iowa City, IA"
+    },
+    {
+        "cname": "Suzanne May",
+        "fullAddress": "2 Second Street, Iowa City, IA"
+    }
+]

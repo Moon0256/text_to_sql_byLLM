@@ -1,0 +1,31 @@
+
+[
+    {
+        "pid": 10,
+        "pname": "Textbook",
+        "numberOfTimesShipped": 3,
+        "totalAmountShipped": 6,
+        "totalValueShipped": 1500.00
+    },
+    {
+        "pid": 2,
+        "pname": "Wooden Chair",
+        "numberOfTimesShipped": 6,
+        "totalAmountShipped": 38,
+        "totalValueShipped": 3799.62
+    },
+    {
+        "pid": 8,
+        "pname": "Table",
+        "numberOfTimesShipped": 3,
+        "totalAmountShipped": 38,
+        "totalValueShipped": 113.62
+    },
+    {
+        "pid": 1,
+        "pname": "Swiss Chocolate",
+        "numberOfTimesShipped": 7,
+        "totalAmountShipped": 44,
+        "totalValueShipped": 1451.56
+    }
+]

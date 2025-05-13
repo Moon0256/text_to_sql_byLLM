@@ -1,0 +1,38 @@
+
+[
+    {
+        "cid": 4,
+        "cname": "Russell Johnson",
+        "cid": 15,
+        "cname": "Elish Elias",
+        "numSameShipped": 7
+    },
+    {
+        "cid": 4,
+        "cname": "Russell Johnson",
+        "cid": 6,
+        "cname": "Scott Charles",
+        "numSameShipped": 7
+    },
+    {
+        "cid": 2,
+        "cname": "Joe Smithsonian",
+        "cid": 4,
+        "cname": "Russell Johnson",
+        "numSameShipped": 6
+    },
+    {
+        "cid": 2,
+        "cname": "Joe Smithsonian",
+        "cid": 6,
+        "cname": "Scott Charles",
+        "numSameShipped": 5
+    },
+    {
+        "cid": 6,
+        "cname": "Scott Charles",
+        "cid": 15,
+        "cname": "Elish Elias",
+        "numSameShipped": 5
+    }
+]

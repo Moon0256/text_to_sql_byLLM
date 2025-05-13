@@ -1,0 +1,24 @@
+
+[
+    {
+        "cid": 8,
+        "cname": "Shannon Rose",
+        "address": null,
+        "city": "Wyandotte",
+        "state": "MI"
+    },
+    {
+        "cid": 2,
+        "cname": "Joe Smithsonian",
+        "address": "245 Straight Street",
+        "city": "Iowa City",
+        "state": "IA"
+    },
+    {
+        "cid": 9,
+        "cname": "Beth Rosebud",
+        "address": "1 First Street",
+        "city": "Muscatine",
+        "state": "IA"
+    }
+]
