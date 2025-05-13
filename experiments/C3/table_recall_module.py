@@ -45,7 +45,7 @@ def generate(llm, data_input, prompt, callback=None):
         try:
             with get_openai_callback() as cb:
                 result = chain.invoke(data_input)
-                print("Debug check 1: ", result)
+                #print("Debug check 1: ", result)
                 tables_all = get_tables_response(result)
                 if tables_all is not None:
                     if callback is not None:

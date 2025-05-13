@@ -30,6 +30,9 @@ Question:
 ###  {question}
 """
 
+#Changes made to update the prompt to use the new LangChain method
+#Older version was using the LLMChain method that will be deprecated, but the code is commented out for reference
+
 def column_recall_main(schema, tabs_cols_ori, question, llm, foreign_keys_prompt, callback=None):
     
     prompt = PromptTemplate(template=COLUMN_RECALL_PROMPT, input_variables=["schema", "foreign_keys", "question"])
@@ -38,20 +41,23 @@ def column_recall_main(schema, tabs_cols_ori, question, llm, foreign_keys_prompt
     tabs_cols_all = generate(llm, data_input, prompt, callback=callback)
     if tabs_cols_all is None:
         return None
+    
+    #print("Print column debug 1: ", tabs_cols_all)
     return column_self_consistency(tabs_cols_all, tabs_cols_ori)
 
     
 
 def generate(llm, data_input, prompt, callback=None):
 
-    llm_chain = LLMChain(prompt=prompt, llm=llm)
+    # llm_chain = LLMChain(prompt=prompt, llm=llm)
+    llm_chain = prompt | llm
     tabs_cols_all = None
     attempts = 1
     
     while tabs_cols_all is None and attempts <= 3:
         try:
             with get_openai_callback() as cb:
-                result = llm_chain.generate(data_input)
+                result = llm_chain.invoke(data_input[0])
                 tabs_cols_all = get_tables_column_response(result)
                 if tabs_cols_all is not None:
                     if callback is not None:
@@ -67,6 +73,7 @@ def generate(llm, data_input, prompt, callback=None):
             print(f"Column recall attempt: {attempts}")
             attempts += 1
     
+    #print("Print Column Debug 2: ", tabs_cols_all)
     return tabs_cols_all
         
         
@@ -74,17 +81,32 @@ def generate(llm, data_input, prompt, callback=None):
 def get_tables_column_response(responses):
 
     tabs_cols_all = []
-    for tabs_cols_response in responses.generations[0]:
-        raw_tab_col = tabs_cols_response.text
-        try:
-            raw_tab_col = '{' + raw_tab_col.split('{', 1)[1]
-            raw_tab_col = raw_tab_col.rsplit('}', 1)[0] + '}'
-            raw_tab_col = json.loads(raw_tab_col)
-        except:
-            print('list error column recall')
-            return None
+    try:
+        raw_tab_col = responses.content
+        raw_tab_col = '{' + raw_tab_col.split('{', 1)[1]
+        raw_tab_col = raw_tab_col.rsplit('}', 1)[0] + '}'
+        raw_tab_col = eval(raw_tab_col)  # or json.loads() if you're confident it's strict JSON
         tabs_cols_all.append(raw_tab_col)
-    return tabs_cols_all
+        #print("Print column debug 3: ", tabs_cols_all)
+        return tabs_cols_all
+    except Exception as e:
+        print('list error column recall:', e)
+        return None
+
+    # tabs_cols_all = []
+    # for tabs_cols_response in responses.generations[0]:
+    #     raw_tab_col = tabs_cols_response.text
+    #     try:
+    #         raw_tab_col = '{' + raw_tab_col.split('{', 1)[1]
+    #         raw_tab_col = raw_tab_col.rsplit('}', 1)[0] + '}'
+    #         raw_tab_col = json.loads(raw_tab_col)
+    #     except:
+    #         print('list error column recall')
+    #         return None
+    #     tabs_cols_all.append(raw_tab_col)
+
+    # print("Print column debug 3: ", tabs_cols_all)    
+    # return tabs_cols_all
 
 
 def column_self_consistency(tabs_cols_all, tabs_cols_ori):
