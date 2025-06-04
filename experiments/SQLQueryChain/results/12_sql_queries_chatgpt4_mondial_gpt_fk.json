@@ -9,7 +9,7 @@
             "prompt_tokens": 4187,
             "completion_tokens": 14,
             "total_cost": 0.12645,
-            "time": 3.1572227478027344
+            "time": 2.8596651554107666
         },
         {
             "id": "2",
@@ -20,40 +20,30 @@
             "prompt_tokens": 4193,
             "completion_tokens": 16,
             "total_cost": 0.12674999999999997,
-            "time": 1.601186990737915
+            "time": 1.8366708755493164
         },
         {
             "id": "3",
             "question": "What are the languages spoken in Poland?",
-            "query_string": "SELECT language FROM spoken WHERE country = (SELECT code FROM country WHERE name = 'Poland')",
+            "query_string": "SELECT language FROM spoken WHERE country = 'PL'",
             "type": "medium",
-            "total_tokens": 4210,
+            "total_tokens": 4201,
             "prompt_tokens": 4188,
-            "completion_tokens": 22,
-            "total_cost": 0.12695999999999996,
-            "time": 1.6837060451507568
+            "completion_tokens": 13,
+            "total_cost": 0.12641999999999998,
+            "time": 1.6194682121276855
         },
         {
             "id": "4",
             "question": "How deep is Lake Kariba?",
-            "query_string": "SELECT depth FROM lake WHERE name = 'Lake Kariba'",
-            "type": "simple",
-            "total_tokens": 4202,
-            "prompt_tokens": 4187,
-            "completion_tokens": 15,
-            "total_cost": 0.12651,
-            "time": 1.8868329524993896
+            "query_string": "",
+            "type": "simple"
         },
         {
             "id": "5",
             "question": "What is the total of provinces of Netherlands?",
-            "query_string": "SELECT COUNT(name) FROM province WHERE country = 'NLD'",
-            "type": "complex",
-            "total_tokens": 4205,
-            "prompt_tokens": 4189,
-            "completion_tokens": 16,
-            "total_cost": 0.12663,
-            "time": 3.317183017730713
+            "query_string": "",
+            "type": "complex"
         },
         {
             "id": "6",
